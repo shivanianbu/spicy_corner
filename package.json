@@ -1,0 +1,62 @@
+{
+  "name": "spicy-corner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "classnames": "^2.3.1",
+    "composable-middleware": "^0.3.0",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "is-empty": "^1.2.0",
+    "javascript-state-machine": "^3.1.0",
+    "jsonwebtoken": "^8.3.0",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.3.11",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-alice-carousel": "^2.5.1",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "redux-thunk": "^2.3.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivanianbu/spicy_corner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivanianbu/spicy_corner/issues"
+  },
+  "homepage": "https://github.com/shivanianbu/spicy_corner#readme"
+}
